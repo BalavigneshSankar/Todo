@@ -1,0 +1,65 @@
+/* rem and em do not depend on html font-size in media queries. 1rem = 1em = 16px */
+
+/************************/
+/* Below 1344px - Small desktop */
+@media (max-width: 84em) {
+  .auth .main-container {
+    width: 35vw;
+  }
+}
+
+/************************/
+/* Below 1200px - Landscape tablet */
+@media (max-width: 75em) {
+  .auth .main-container {
+    width: 50vw;
+  }
+
+  .todos .main-container {
+    width: 60vw;
+  }
+}
+
+/************************/
+/* Below 976px - Tablet */
+@media (max-width: 61em) {
+  .auth .main-container {
+    width: 60vw;
+  }
+
+  .todos .main-container {
+    width: 85vw;
+  }
+}
+
+/************************/
+/* Below 704px - Small tablet */
+@media (max-width: 44em) {
+  .auth .main-container {
+    width: 75vw;
+  }
+
+  .todos .main-container {
+    width: 100vw;
+  }
+}
+
+/************************/
+/* Below 544px - Phone */
+@media (max-width: 34em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .auth .main-container {
+    width: 80vw;
+  }
+
+  .todo-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: start;
+    gap: 2px;
+  }
+}

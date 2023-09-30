@@ -1,0 +1,344 @@
+/* ============= PROJECT CSS =============== */
+/* ======== Header ======== */
+.header {
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.header .main-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.todo-logo {
+  font-size: 4rem;
+  color: var(--primary-500);
+}
+
+/* ======== Auth ======== */
+.auth {
+  min-height: 100vh;
+  background: linear-gradient(var(--primary-500), var(--primary-600));
+  padding: 2.4rem 1.6rem;
+}
+
+.auth .main-container {
+  background: var(--white);
+  width: 30vw;
+  margin: 0 auto;
+  padding: 2.4rem 1.6rem;
+  border-radius: var(--borderRadius);
+}
+
+.auth .todo-logo {
+  color: var(--white);
+}
+
+.title-container {
+  margin-bottom: 3.2rem;
+}
+
+.title {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: var(--primary-700);
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.underline {
+  width: 12.5%;
+  height: 0.4rem;
+  background-color: var(--primary-700);
+  border-radius: var(--borderRadius);
+  margin: 0 auto;
+}
+
+.form-user {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.form-name-container,
+.form-email-container,
+.form-password-container,
+.form-confirm-password-container {
+  background-color: var(--grey-300);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 0.8rem;
+  border-radius: var(--borderRadius);
+}
+
+.form-user label {
+  font-size: 2rem;
+  color: var(--grey-500);
+}
+
+.form-user input {
+  flex: 1;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--grey-700);
+}
+
+.form-user input::placeholder {
+  font-weight: 400;
+}
+
+.btn-auth--primary {
+  font-size: 1.4rem;
+  padding: 0.8rem 0.4rem;
+}
+
+.devider {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.devider h5 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background: var(--white);
+  color: var(--grey-500);
+  padding: 0 0.4rem;
+  text-transform: none;
+}
+
+.devider::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: var(--grey-200);
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.btn-auth--secondary {
+  font-size: 1.4rem;
+  padding: 0.8rem 0.4rem;
+  background: var(--grey-100);
+  border: 1px solid var(--grey-500);
+  color: var(--grey-700);
+  width: 100%;
+}
+
+.btn-auth--secondary:hover {
+  background: var(--grey-200);
+}
+
+/* ======== Todos ======== */
+.todos {
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+.user-container {
+  background-color: var(--primary-500);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.user-container:hover {
+  cursor: pointer;
+  box-shadow: var(--shadow-3);
+  transform: scale(1.05);
+}
+
+.user {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.user-container:hover .user {
+  transform: scale(1.05);
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(-10%, 115%);
+  padding: 8px;
+  background-color: var(--grey-200);
+  border-radius: var(--borderRadius);
+}
+
+/* Tooltip design */
+nav::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateY(-100%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--grey-200) transparent;
+}
+
+.btn-logout {
+  font-size: 1.4rem;
+  display: inline-block;
+  padding: 0.8rem 0.8rem;
+}
+
+.todos .main-container {
+  width: 50vw;
+  margin: 0 auto;
+  padding: 2.4rem 1.6rem;
+}
+
+.todo-form {
+  margin: 0 auto;
+  padding: 1.6rem 1.2rem;
+  display: flex;
+  gap: 1.2rem;
+  background-color: var(--grey-200);
+  border-radius: var(--borderRadius);
+  margin-bottom: 3.2rem;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 0.8rem;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.todo-input::placeholder {
+  font-weight: 400;
+}
+
+.btn-add-todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.6rem;
+}
+
+.todos-table {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.8rem;
+  background-color: var(--grey-200);
+  border-radius: var(--borderRadius);
+}
+
+.todo-row {
+  margin-bottom: 1.2rem;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr;
+  align-items: center;
+  gap: 2rem;
+  transition: all linear 1s;
+}
+
+.todo-done {
+  text-decoration: line-through;
+}
+
+.todo-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-items: start;
+  gap: 2rem;
+}
+
+.todo-created-at {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--grey-400);
+}
+
+.todo-value {
+  font-size: 1.8rem;
+}
+
+.btn-edit-todo,
+.btn-delete-todo {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-edit-todo:hover .edit-icon,
+.btn-delete-todo:hover .delete-icon {
+  transform: scale(1.1);
+}
+
+.todo-icon,
+.edit-icon,
+.delete-icon {
+  font-size: 2rem;
+  color: var(--primary-500);
+}
+
+.no-todos {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--grey-400);
+}
+
+/* ======== Error ======== */
+.error .main-container {
+  width: 75vw;
+  margin: 0 auto;
+  padding: 8rem 6.4rem;
+  display: block;
+  text-align: center;
+}
+
+.error {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 4.8rem;
+}
+
+.error .login-link:link,
+.error .login-link:visited {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--white);
+  background: var(--primary-500);
+  border: none;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  display: inline-block;
+  padding: 0.8rem;
+}
+
+.error .login-link:hover,
+.error .login-link:active {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
+}
+
+.alert-icon {
+  transform: translateY(10%);
+  margin-right: 2px;
+}

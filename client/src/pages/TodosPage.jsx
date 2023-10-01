@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import Header from "../components/todos/Header";
 import TodoForm from "../components/todos/TodoForm";
-import Todo from "../components/todos/todo";
+import Todo from "../components/todos/Todo";
 import axiosInstance from "../axios/axiosInstance";
 import Error from "../components/Error";
 

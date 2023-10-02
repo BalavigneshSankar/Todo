@@ -1,5 +1,5 @@
 # Todo Tracker
-Todo Tracker is a Full Stack Task Manager App. Has Signup/Login with password encryption for data security and other features. It is responsive to all screen sizes and devices.
+Todo Tracker is a Full Stack Task Manager App. Has authentication with password encryption for data security and other features. It is responsive to all screen sizes and devices.
 
 ## Tech Stack
 

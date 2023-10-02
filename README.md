@@ -1,8 +1,7 @@
-# [Todo Tracker](https://github.com/BalavigneshSankar/Todo#todo-tracker)
+# Todo Tracker
+Todo Tracker is a Full Stack Task Manager App. Has Signup/Login with password encryption for data security and other features. It is responsive to all screen sizes and devices.
 
-Todo Tracker is a Full Stack Task Manager App. Has Signup/Login with password encryption for data security and other features. It is resposive to all screen sizes and devices.
-
-## [Tech Stack](https://github.com/BalavigneshSankar/Todo#tech-stack)
+## Tech Stack
 
 **Client**: React JS
 
@@ -10,7 +9,7 @@ Todo Tracker is a Full Stack Task Manager App. Has Signup/Login with password en
 
 **Database**: Mongo DB
 
-## [Demo](https://github.com/BalavigneshSankar/Todo#demo)
+## Demo
 [https://my-todo-tracker.netlify.app/](https://my-todo-tracker.netlify.app/ "Demo Link")
 
 ![Todo-tracker-signup screen](https://github.com/BalavigneshSankar/Todo/blob/master/screenshots/Todo-tracker-signup%20screen.png)
@@ -21,6 +20,3 @@ Todo Tracker is a Full Stack Task Manager App. Has Signup/Login with password en
 -  User authentication
 -  Add/Edit/Delete todo
 -  Responsive
-
-## [Made By](https://github.com/BalavigneshSankar/Todo#made-by)
--   <@BalavigneshSankar>
